@@ -1,4 +1,5 @@
 import os
+SEC="lll"
 SEC = os.environ["SEC"]
 from httpx import URL, Proxy, Timeout, Response, BaseTransport, AsyncBaseTransport
 import streamlit as st
