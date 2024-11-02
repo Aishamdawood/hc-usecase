@@ -1,4 +1,5 @@
-New = "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"
+import os
+SEC = os.environment["SEC"]
 from httpx import URL, Proxy, Timeout, Response, BaseTransport, AsyncBaseTransport
 import streamlit as st
 st.set_page_config(layout="wide")
@@ -110,7 +111,7 @@ from pandasai.responses.response_parser import ResponseParser
 from pandasai.responses.streamlit_response import StreamlitResponse
 import matplotlib.pyplot as plt
 openai_llm = OpenAI(
-api_token=New,
+api_token=SEC,
 temperature=0.9
 )
 # Concatenate the DataFrames in the dfs dictionary into a single DataFrame
