@@ -1,5 +1,5 @@
 import os
-SEC = os.environment["SEC"]
+SEC = os.environ["SEC"]
 from httpx import URL, Proxy, Timeout, Response, BaseTransport, AsyncBaseTransport
 import streamlit as st
 st.set_page_config(layout="wide")
